@@ -1,20 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuizMaster</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>QuizMaster</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Quiz Master</h1>
-    <div class="container">
-        <div>
-        <p></p>
-        </div>
-        <div></div>
-        <div></div>
+
+  <h1>QuizMaster</h1>
+  <div class="all">
+    <div class ="box">
+    <div class="question">
+      <label>1) Who will be King of Pirates?</label><br>
+      <input type="text" id="q1" placeholder="Your answer">
     </div>
-    <script src="script.js"></script>
+   </div>
+    <div class ="box">
+        <div class="question">
+      <label>2) First mate of straw hats?</label><br>
+      <input type="text" id="q2" placeholder="Your answer">
+    </div>
+    </div>
+    
+<div class ="box">
+<div class="question">
+      <label>3) Greatest piece of ficition? </label><br>
+      <input type="text" id="q3" placeholder="Your answer">
+    </div>
+</div>
+<div class ="box">
+<div class="question">
+      <label>4) Author of this series </label><br>
+      <input type="text" id="q4" placeholder="Your answer">
+    </div>
+</div>
+  </div>
+  
+    
+  
+
+  <button onclick="calculateScore(strictScoring)">Check Score (Strict)</button>
+  <button onclick="calculateScore(lenientScoring)">Check Score (Lenient)</button>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
